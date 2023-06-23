@@ -164,6 +164,11 @@ video {
   display: flex;
   flex-direction: column;
   align-items: center;
+  transition: all 1s;
+}
+
+.logos:hover{
+  transform: scale(1.2);
 }
 
 img.logo-clientes.aos-init {
