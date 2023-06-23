@@ -166,6 +166,11 @@ video {
   align-items: center;
 }
 
+img.logo-clientes.aos-init {
+  height: auto;
+  width: 7rem;
+}
+
 /*CONTACTAME*/
 
 .contactame {
@@ -358,9 +363,7 @@ footer {
     font-size: 3rem;
   }
 
-  .principio {
-    flex-direction: column;
-  }
+  
   .descripcion-inicio {
    
     font-size: 0.7rem;
@@ -369,18 +372,18 @@ footer {
   
   video {
     height: 70%;
-    width: auto;
   }
   
-  img.aos-init.aos-animate {
-    height: 50%;
-  }
+ 
 }
 
 
 @media screen and (max-width: 768px) {
   body{
     padding-inline: 3rem;
+  }
+  .principio {
+    flex-direction: column;
   }
   .servicios-tareas {
     
@@ -392,6 +395,10 @@ footer {
 }
 .video {
   height: 90%;
+}
+.clientes-nombres {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 }
 
