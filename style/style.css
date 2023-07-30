@@ -194,6 +194,18 @@ video {
   margin-top: 10rem;  
 }
 
+.clientes-nombres {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 2rem;
+}
+
+.logos {
+  
+  align-items: center;
+  
+}
+
 .logos a{
   transition: all 0.5s;
 }
