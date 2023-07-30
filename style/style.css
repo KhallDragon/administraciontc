@@ -187,6 +187,7 @@ video {
 .lista li{
   margin-bottom: 0.5rem;
   margin-top: 1rem;
+  padding-inline: 3px;
 }
 /*clientes*/
 
@@ -347,7 +348,26 @@ footer {
 	        animation: none;
 }
 
+.absolute{
+  position: relative;
+}
 
+button.glide__arrow.glide__arrow--left {
+  position: relative;
+  top: -72px;
+  right: -11px;
+  height: 3rem;
+    width: 3rem;
+    opacity: 77%
+}
+button.glide__arrow.glide__arrow--right {
+  position: relative;
+  top: -72px;
+  left: 88%;
+  height: 3rem;
+    width: 3rem;
+    opacity: 77%
+}
 
 
 @-webkit-keyframes shake-vertical {
@@ -510,26 +530,7 @@ footer {
   100% { opacity: 1; }
 }
 
-.absolute{
-  position: relative;
-}
 
-button.glide__arrow.glide__arrow--left {
-  position: relative;
-  top: -72px;
-  right: -11px;
-  height: 3rem;
-    width: 3rem;
-    opacity: 77%
-}
-button.glide__arrow.glide__arrow--right {
-  position: relative;
-  top: -72px;
-  left: 88%;
-  height: 3rem;
-    width: 3rem;
-    opacity: 77%
-}
 /*query*/
 
 
@@ -600,12 +601,20 @@ h4{
 }
 button.glide__arrow.glide__arrow--right {
   
-  left: 70%;
+  left: 65%;
 }
 h3.text-center.aos-init.aos-animate {
   margin: 0;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 
 }
 
+@media screen and (max-width: 380px) {
+  
+h3.text-center.aos-init.aos-animate {
+  
+  font-size: 1.1rem;
+}
+
+}

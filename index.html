@@ -15,7 +15,7 @@
 </head>
 
 <body class="m-1">
-    <header>
+    <header >
 
         <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-dark bg-dark">
             <div class="container-fluid">
@@ -46,8 +46,11 @@
         <div class="principio">
             <div>
                 <h1 data-aos="fade-up" data-aos-duration="3000">Administracion<br> T.C. </h1>
-                <p class="descripcion-inicio " data-aos="fade-up" data-aos-duration="2000">En Adminsitracion tc nos  dedicamos a resolver todos los problemas que tenga tu empresa de índole administrativa, financiera,  contable, impositiva y de personal . <br> <br> Donde analizamos la situación, elaboramos un plan de acción y  lo llevamos a cabo para una correcta administración del negocio.</p>
-            </div>
+                <div class="d-flex">
+                    <p class="descripcion-inicio text-wrap" data-aos="fade-up" data-aos-duration="2000">En Adminsitracion tc nos  dedicamos a resolver todos los problemas que tenga tu empresa de índole administrativa, financiera,  contable, impositiva y de personal . <br> <br> Donde analizamos la situación, elaboramos un plan de acción y  lo llevamos a cabo para una correcta administración del negocio.</p>
+            
+                </div>
+                </div>
            
         </div>
         <div class="scroll-img shake-vertical">
@@ -61,22 +64,20 @@
             <h2 class="servicios-num">01.</h2>
             <h2 class="servicios-titulo">SERVICIOS</h2>
             <div class="servicios-tareas row ">
-                <div class="col-4">
-                    <h3 data-aos="zoom-in" data-aos-duration="500" class="text-center fw-bolder">Gestión financiera</h3>
+                <div class="col-3 col-md-4 p-0">
+                    <h3 data-aos="zoom-in" data-aos-duration="500" class="text-center fw-bolder ">Gestión <br> financiera</h3>
                     <ul class="d-none lista">
-                        <li class="escribir"></li>
-                        
-                    </ul>
-                    
+                        <li class="escribir"></li>                        
+                    </ul>                    
                 </div>
-                <div class="col-4">
-                    <h3 data-aos="zoom-in" data-aos-duration="900" class="text-center fw-bolder">Gestión contable</h3>
+                <div class="col-3 col-md-4 p-0">
+                    <h3 data-aos="zoom-in" data-aos-duration="900" class="text-center fw-bolder">Gestión <br>contable</h3>
                     <ul class="d-none lista">
                         <li class="escribir1"> </li>
                     </ul>
                 </div>
-                <div class="col-4">
-                    <h3 data-aos="zoom-in" data-aos-duration="1300" class="text-center fw-bolder">Gestión administrativa </h3>
+                <div class="col-4   p-0">
+                    <h3 data-aos="zoom-in" data-aos-duration="1300" class="text-center fw-bolder">Gestión <br> administrativa </h3>
                     <ul class="d-none lista">
                         <li class="escribir2"> </li>
                     </ul>
@@ -90,7 +91,7 @@
             </div>
             
         </section>
-        <section class="clientes" id="clientes">
+        <section class="clientes overflow-hidden" id="clientes">
             <h2 class="servicios-num">02.</h2>
             <h2 class="servicios-titulo">CLIENTES</h2>
             <div class="glide overflow-hidden mt-5">
@@ -265,7 +266,8 @@
                     perView: 3,
                 },
                 700: {
-                    perView: 2
+                    perView: 3,
+                    gap: 10,
                 }
             }
         }).mount()
