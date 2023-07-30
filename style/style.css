@@ -213,6 +213,14 @@ video {
   transform: scale(1.2); 
 }
 
+.logo-clientes{
+  transition: all 1.8s;
+}
+
+.logo-clientes:hover{
+  transform: scale(1.2); 
+}
+
 img.logo-clientes.aos-init {
   height: auto;
   width: 7rem;
