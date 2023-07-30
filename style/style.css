@@ -191,20 +191,7 @@ video {
 /*clientes*/
 
 .clientes {
-  margin-top: 10rem;
-  
-}
-
-.clientes-nombres {
-  display: flex;
-  justify-content: space-evenly;
-  margin-top: 2rem;
-}
-
-.logos {
-  
-  align-items: center;
-  
+  margin-top: 10rem;  
 }
 
 .logos a{

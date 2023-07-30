@@ -254,23 +254,19 @@
     <script>
         new Glide('.glide', {
             perView: 4,
-            focusAt: 0,
-            gap: 100,
+            gap: 10,
             autoplay: 2500,
             bound: true,
             perTouch: true,
             animationDuration: 900,
             rewindDuration: 2000,
-            peek: { before: 150, after: 150 },
             breakpoints: {
                 800: {
                     perView: 2,
                     gap: 50
                 },
                 700: {
-                    perView: 1,
-                    focusAt: -0.5,
-                    gap: 35
+                    perView: 1
                 }
             }
         }).mount()
