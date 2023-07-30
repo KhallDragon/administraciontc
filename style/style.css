@@ -1,16 +1,29 @@
 /*FUENTES*/
 @import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Expanded&family=Rajdhani:wght@300;500&display=swap');
 
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none; }
+  
+
+
+
 body {
-  background-color: black;
-  color: white;
+  background-color: #dadff7;
+  color: #2b2e3b;
   padding-inline: 10rem;
   font-family: 'Rajdhani', sans-serif;
-
+  overflow-x: hidden;
 }
 
 /*FONDO PAGINA INICIAL*/
 
+ul {
+  list-style: none;
+}
 header {
   height: 100vh;
   display: flex;
@@ -18,29 +31,31 @@ header {
   justify-content: space-between;
   background-image: url('../img/pexels-pressmaster-3141208-3840x2160-25fps.mp4');
 
-
 }
 
 
 /*NAVBAR*/
 
 .logo {
-  height: 3rem
+  height: 7rem
 }
 
 nav.navbar.navbar-expand-lg.bg-body-tertiary {
   background-color: transparent !important;
-  color: white !important;
+  color: #2b2e3b !important;
 }
 
 a.nav-link {
-  color: white;
+  color: #2b2e3b;
   transition: transform 0.5s;
 }
-
+span.navbar-toggler-icon {
+  background-color: #2b2e3b!important;
+  border-radius: 10%;
+}
 
 .nav-link:hover {
-  color: #1E945B !important;
+  color: #5a7d7c !important;
   transform: scale(1.2);
 }
 
@@ -55,7 +70,7 @@ h1 {
 
 .descripcion-inicio {
   margin-top: 2rem;
-  font-size: 1.4rem;
+  font-size: 2rem;
   font-weight: 300;
 }
 
@@ -90,9 +105,22 @@ video {
 
 .sobreMi-titulo {
   font-size: 1.5rem;
-  color: #1E945B;
+  color: #5a7d7c;
   font-weight: 300;
   margin-bottom: 2rem;
+  margin-top: 5rem;
+}
+
+.boton{
+  background-color: #5a7d7c;
+  transition: all 1s;
+  border: none;
+  border-radius: 2rem;
+}
+
+.boton:hover{
+  background-color: #2d4b47;
+  color: white;
 }
 
 .sobreMi {
@@ -118,11 +146,12 @@ video {
 
 .servicios {
   margin-top: 3rem;
+  
 }
 
 .servicios-num {
   display: inline;
-  color: #1E945B;
+  color: #5a7d7c;
   font-family: 'Encode Sans Semi Expanded', sans-serif;
   font-size: 1.5rem;
 }
@@ -135,12 +164,12 @@ video {
 
 .servicios-tareas {
   display: flex;
-  margin-top: 2rem;
+  margin-top: 4rem;
   justify-content: center;
 }
 
 .servicios-tareas div {
-  border: 2px white solid;
+  border: 2px black solid;
 }
 
 .servicios-tareas div h3 {
@@ -148,10 +177,22 @@ video {
   margin: 1.3rem;
 }
 
+
+.lista{
+  padding: 0;
+  margin-top: 1rem;
+  
+}
+
+.lista li{
+  margin-bottom: 0.5rem;
+  margin-top: 1rem;
+}
 /*clientes*/
 
 .clientes {
-  margin-top: 3rem;
+  margin-top: 10rem;
+  
 }
 
 .clientes-nombres {
@@ -161,14 +202,16 @@ video {
 }
 
 .logos {
-  display: flex;
-  flex-direction: column;
+  
   align-items: center;
-  transition: all 1s;
+  
 }
 
-.logos:hover{
-  transform: scale(1.2);
+.logos a{
+  transition: all 0.5s;
+}
+.logos a:hover{
+  transform: scale(1.2); 
 }
 
 img.logo-clientes.aos-init {
@@ -200,7 +243,7 @@ form {
 /*footer*/
 
 footer {
-  background-color: #125132;
+  background-color: #5a7d7c;
   padding: 20px 0;
   height: 25vh;
   border-radius: 3rem;
@@ -282,6 +325,22 @@ footer {
   -webkit-animation: shake-vertical 3s cubic-bezier(0.550, 0.085, 0.680, 0.530) 1s infinite both;
   animation: shake-vertical 3s cubic-bezier(0.550, 0.085, 0.680, 0.530) 1s infinite both;
 }
+.shake-vertical:hover {
+  -webkit-animation: none;
+  animation: none;
+}
+
+.heartbeat {
+	-webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+	        animation: heartbeat 1.5s ease-in-out infinite both;
+}
+
+.heartbeat:hover{
+  -webkit-animation: none;
+	        animation: none;
+}
+
+
 
 
 @-webkit-keyframes shake-vertical {
@@ -352,37 +411,141 @@ footer {
   }
 }
 
-
-/*query*/
-
-@media screen and (max-width: 1440px) {
-  h1 {
-    font-size: 5rem;
+ @-webkit-keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: center center;
+            transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
   }
-
-  .descripcion-inicio {
-    font-size: 1rem;
+  10% {
+    -webkit-transform: scale(0.91);
+            transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+            transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+            transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
   }
 }
+@keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: center center;
+            transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+            transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+            transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+            transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+}
+
+
+.typed-cursor {
+  opacity: 1;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
+}
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-webkit-keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-moz-keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.absolute{
+  position: relative;
+}
+
+button.glide__arrow.glide__arrow--left {
+  position: relative;
+  top: -72px;
+  right: -11px;
+  height: 3rem;
+    width: 3rem;
+    opacity: 77%
+}
+button.glide__arrow.glide__arrow--right {
+  position: relative;
+  top: -72px;
+  left: 88%;
+  height: 3rem;
+    width: 3rem;
+    opacity: 77%
+}
+/*query*/
+
+
 
 @media screen and (max-width: 1024px) {
   h1 {
     margin-top: 2rem;
-    font-size: 3rem;
-  }
-
-  
+    font-size: 6rem;
+  }  
   .descripcion-inicio {
    
-    font-size: 0.7rem;
-    flex-wrap: wrap;
+    font-size: 1.2rem;
   }
   
   video {
     height: 70%;
   }
   
- 
+  button.glide__arrow.glide__arrow--right {
+    
+    left: 84%;
+    
+  }
 }
 
 
@@ -390,36 +553,37 @@ footer {
   body{
     padding-inline: 3rem;
   }
+  h1 {
+    font-size: 4rem;
+  }  
   .principio {
     flex-direction: column;
   }
-  .servicios-tareas {
-    
-    flex-direction: column;
-}
-.clientes-nombres {
-  
-  flex-direction: column;
-}
+  .descripcion-inicio {   
+    font-size: 0.8rem;
+  }
+
+
 .video {
   height: 90%;
 }
-.clientes-nombres {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
+
 }
 
 @media screen and (max-width: 500px) {
   body{
     padding-inline: 1rem;
     width: 100vw;
+    overflow-x: hidden;
   }
+  
   h1{
-    font-size: 2rem;
+    font-size: 2.5rem;
+    margin-bottom: 3.5rem;
   }
   h2.sobreMi-h2 {
     font-size: 1.5rem;
+    
 }
 h4{
   font-size: 1rem;
@@ -427,5 +591,14 @@ h4{
 .video {
   height: 85%;
 }
+button.glide__arrow.glide__arrow--right {
+  
+  left: 70%;
+}
+h3.text-center.aos-init.aos-animate {
+  margin: 0;
+  font-size: 1.2rem;
+}
 
 }
+

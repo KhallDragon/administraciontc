@@ -9,6 +9,8 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="httos://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
+    <link rel="stylesheet" href="httos://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.theme.min.css">
     <link rel="stylesheet" href="./style/style.css">
 </head>
 
@@ -25,14 +27,15 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item mx-5">
-                            <a class="nav-link" id="hover" href="#sobremi">Sobre Mi</a>
-                        </li>
+
                         <li class="nav-item mx-5">
                             <a class="nav-link" href="#servicios">Servicios</a>
                         </li>
                         <li class="nav-item mx-5">
                             <a class="nav-link" href="#clientes">Clientess</a>
+                        </li>
+                        <li class="nav-item mx-5">
+                            <a class="nav-link" id="hover" href="#sobremi">Sobre Mi</a>
                         </li>
                         <li class="nav-item mx-5">
                             <a class="nav-link" href="#contactame">Contactame</a>
@@ -43,108 +46,123 @@
         <div class="principio">
             <div>
                 <h1 data-aos="fade-up" data-aos-duration="3000">Administracion<br> T.C. </h1>
-                <p class="descripcion-inicio" data-aos="fade-up" data-aos-duration="2000">Hola!, mi nombe es Tomas, Soy
-                    Administrativo Contable, con un historial
-                    demostrado.<br>
-                    Gran atencion al detalle y fuerte hablidad para la toma de desiciones gestionando <br>
-                    multiples tareas simultaneas.</p>
+                <p class="descripcion-inicio " data-aos="fade-up" data-aos-duration="2000">En Adminsitracion tc nos  dedicamos a resolver todos los problemas que tenga tu empresa de índole administrativa, financiera,  contable, impositiva y de personal . Donde analizamos la situación, elaboramos un plan de acción y  lo llevamos a cabo para una correcta administración del negocio.</p>
             </div>
-            <div class="video">
-                <video autoplay loop muted playsinline>
-                    <source src="./img/video.mp4" type="video/mp4">
-                </video>
-            </div>
+           
         </div>
         <div class="scroll-img shake-vertical">
-            <img src="./img/scroll.png " alt="scroll down">
+            <a href="#servicios"> <img src="./img/scroll.png " alt="scroll down"></a>
         </div>
     </header>
     <main>
 
 
-        <section class="servicios" id="servicios">
+        <section class="servicios position-relative" id="servicios">
             <h2 class="servicios-num">01.</h2>
             <h2 class="servicios-titulo">SERVICIOS</h2>
-            <div class="servicios-tareas">
-                <div>
-                    <h3 data-aos="zoom-in" data-aos-duration="500">Gestion contable</h3>
+            <div class="servicios-tareas row ">
+                <div class="col-4">
+                    <h3 data-aos="zoom-in" data-aos-duration="500" class="text-center fw-bolder">Gestión financiera</h3>
+                    <ul class="d-none lista">
+                        <li class="escribir"></li>
+                        
+                    </ul>
+                    
                 </div>
-                <div>
-                    <h3 data-aos="zoom-in" data-aos-duration="700">Gestion funanciera</h3>
+                <div class="col-4">
+                    <h3 data-aos="zoom-in" data-aos-duration="900" class="text-center fw-bolder">Gestión contable</h3>
+                    <ul class="d-none lista">
+                        <li class="escribir1"> </li>
+                    </ul>
                 </div>
-                <div>
-                    <h3 data-aos="zoom-in" data-aos-duration="900">Asesoramiento financiero</h3>
+                <div class="col-4">
+                    <h3 data-aos="zoom-in" data-aos-duration="1300" class="text-center fw-bolder">Gestión administrativa </h3>
+                    <ul class="d-none lista">
+                        <li class="escribir2"> </li>
+                    </ul>
                 </div>
-                <div>
-                    <h3 data-aos="zoom-in" data-aos-duration="1100">Informes contables</h3>
-                </div>
-                <div>
-                    <h3 data-aos="zoom-in" data-aos-duration="1300">Seguimineto bancario</h3>
-                </div>
+                
             </div>
+            <div class="d-flex justify-content-center w-100" >
+                <button class="btn boton mt-1 heartbeat" type="button" id="detalles">
+                    Ver Detalles
+                </button>
+            </div>
+            
         </section>
         <section class="clientes" id="clientes">
             <h2 class="servicios-num">02.</h2>
             <h2 class="servicios-titulo">CLIENTES</h2>
-            <div class="clientes-nombres">
-                <div class="logos">
-                    <a href="https://autosrecomendados.com/" target="_blank">
-                        <img src="./img/logos/car.png" alt="car" data-aos="flip-right" data-aos-duration="500"
-                            class="logo-clientes">
-                    </a>
-                    <p>CAR</p>
+            <div class="glide overflow-hidden mt-5">
+                <div class="glide__track absolute" data-glide-el="track">
+                    <div class="clientes-nombres glide__slides">
+                        <div class="logos glide__slide">
+                            <a href="https://autosrecomendados.com/" target="_blank">
+                                <img src="./img/logos/car.png" alt="car" data-aos="flip-right" data-aos-duration="500"
+                                    class="logo-clientes">
+                            </a>
+                        </div>
+                        <div class="logos glide__slide">
+                            <a href="https://modiner.com.ar/" target="_blank">
+                                <img src="./img/logos/house.jpg" alt="modiner" data-aos="flip-right"
+                                    data-aos-duration="900" class="logo-clientes">
+                            </a>
+                        </div>
+                        <div class="logos glide__slide">
+                            <a href="http://www.jsbjourneys.com" target="_blank">
+                                <img src="./img/logos/jsb.png" alt="jsb" data-aos="flip-right" data-aos-duration="1300"
+                                    class="logo-clientes">
+                            </a>
+                        </div>
+                        <div class="logos glide__slide">
+                            <a href="http://deltanuevegorras.com.ar" target="_blank">
+                                <img src="./img/logos/delta-nueve.png" alt="delta nueve gorras" data-aos="flip-right"
+                                    data-aos-duration="1700" class="logo-clientes">
+                            </a>
+                        </div>
+                        <div class="logos glide__slide">
+                            <a href="https://www.weekitfit.com.ar/" target="_blank">
+                                <img src="./img/logos/week-it-fit.png" alt="week it fit" data-aos="flip-right"
+                                    data-aos-duration="500" class="logo-clientes">
+                            </a>
+                        </div>
+                        <div class="logos glide__slide">
+                            <a href="https://www.landhi.com.ar/estudio.arqmariasioli" target="_blank">
+                                <img src="./img/logos/maria-sioli.png" alt="maria sioli" data-aos="flip-right"
+                                    data-aos-duration="900" class="logo-clientes">
+                            </a>
+                        </div>
+                        <div class="logos glide__slide">
+                            <a href="https://vibracreative.com.ar/" target="_blank">
+                                <img src="./img/logos/vibra.png" alt="vibra" data-aos="flip-right"
+                                    data-aos-duration="1300" class="logo-clientes">
+                            </a>
+                        </div>
+                        <div class="logos glide__slide">
+                            <a href="https://maihaus.com.ar/" target="_blank">
+                                <img src="./img/logos/maihaus.png" alt="maihaus" data-aos="flip-right"
+                                    data-aos-duration="1700" class="logo-clientes">
+                            </a>
+                        </div>
+                        <div class="logos glide__slide">
+                            <a href="http://apronsoft.co.uk/" target="_blank">
+                                <img src="./img/logos/apron.png" alt="maihaus" data-aos="flip-right"
+                                    data-aos-duration="1700" class="logo-clientes">
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <div class="logos">
-                    <a href="https://modiner.com.ar/" target="_blank">
-                        <img src="./img/logos/house.jpg" alt="modiner" data-aos="flip-right" data-aos-duration="900"
-                            class="logo-clientes">
-                    </a>
-                    <p>MODINER</p>
-                </div>
-                <div class="logos" >
-                    <a href="http://www.jsbjourneys.com" target="_blank">
-                        <img src="./img/logos/jsb.png" alt="jsb" data-aos="flip-right" data-aos-duration="1300"class="logo-clientes">
-                    </a>
-                    <p>JSB</p>
-                </div>
-                <div class="logos">
-                    <a href="http://deltanuevegorras.com.ar" target="_blank">
-                        <img src="./img/logos/delta-nueve.png" alt="delta nueve gorras" data-aos="flip-right"
-                            data-aos-duration="1700" class="logo-clientes">
-                    </a>
-                    <p>DELTA NUEVE</p>
+                <div class="glide__arrows" data-glide-el="controls">
+                    <button class="glide__arrow glide__arrow--left boton shadow" data-glide-dir="<"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-short" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"/>
+                      </svg></button>
+                    <button class="glide__arrow glide__arrow--right boton shadow" data-glide-dir=">"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+                      </svg></button>
                 </div>
             </div>
-            <div class="clientes-nombres">
-                <div class="logos" >
-                    <a href="https://www.weekitfit.com.ar/" target="_blank">
-                        <img src="./img/logos/week-it-fit.png" alt="week it fit" data-aos="flip-right" data-aos-duration="500"
-                            class="logo-clientes">
-                    </a>
-                    <p>WEEK IT FIT</p>
-                </div>
-                <div class="logos">
-                    <a href="https://www.landhi.com.ar/estudio.arqmariasioli" target="_blank">
-                        <img src="./img/logos/maria-sioli.png" alt="maria sioli" data-aos="flip-right"
-                            data-aos-duration="900" class="logo-clientes">
-                    </a>
-                    <p>MARIA SIOLI</p>
-                </div>
-                <div class="logos">
-                    <a href="https://vibracreative.com.ar/" target="_blank">
-                        <img src="./img/logos/vibra.png" alt="vibra" data-aos="flip-right" data-aos-duration="1300"
-                            class="logo-clientes">
-                    </a>
-                    <p>VIBRA</p>
-                </div>
-                <div class="logos">
-                    <a href="https://maihaus.com.ar/" target="_blank">
-                        <img src="./img/logos/maihaus.png" alt="maihaus" data-aos="flip-right" data-aos-duration="1700"
-                            class="logo-clientes">
-                    </a>
-                    <p>MAIHAUS</p>
-                </div>
-            </div>
+            
+
         </section>
 
         <h3 class="sobreMi-titulo" id="sobremi">SOBRE MI</h3>
@@ -168,14 +186,11 @@
                 <img class="sobreMi-img1" src="./img/cubo.png" alt="cubo forma geometrica">
             </div>
         </section>
-        <br>
-        <br>
-        <div>
-            <h5>Me gusta la administracion. <br> Soy capaz de trabajar bajo presión teniendo en cuenta el objetivo de la
-                compañía y la obtención de resultados.</h5>
-        </div>
-        <button type="button" class="btn btn-secondary mt-4" data-aos="flip-right"><a class="nav-link"
-                href="#contactame">CONTACTAME</a></button>
+        
+        <a href="#contactame">
+            <button type="button" class="btn boton mt-1" data-aos="flip-right">
+                CONTACTAME</button>
+        </a>
         <section class="contactame" id="contactame">
             <h2 class="servicios-num">03.</h2>
             <h2 class="servicios-titulo">CONTACTAME</h2>
@@ -197,9 +212,11 @@
                         <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
                             name="texto"></textarea>
                     </div>
-                    <button type="button" class="btn btn-secondary mt-1">
-                        <input type="submit" value="Enviar" class="submit" id="submit">
+
+                    <button class="btn boton mt-1" type="submit">
+                        enviar
                     </button>
+
                     <input type="hidden" name="_next" value="https://administraciontc.vercel.app/">
                     <input type="hidden" name="_captcha" value="false">
                 </form>
@@ -228,15 +245,37 @@
         </div>
 
     </footer>
-    <script src="
-https://cdn.jsdelivr.net/npm/sweetalert2@11.7.12/dist/sweetalert2.all.min.js
-"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.12/dist/sweetalert2.all.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>
+    <script>AOS.init();</script>
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
     <script>
-        AOS.init();
+        new Glide('.glide', {
+            perView: 4,
+            focusAt: 0,
+            gap: 100,
+            autoplay: 2500,
+            bound: true,
+            perTouch: true,
+            animationDuration: 900,
+            rewindDuration: 2000,
+            peek: { before: 150, after: 150 },
+            breakpoints: {
+                800: {
+                    perView: 2,
+                    gap: 50
+                },
+                700: {
+                    perView: 1,
+                    focusAt: -0.5,
+                    gap: 35
+                }
+            }
+        }).mount()
     </script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script src="./js/index.js  "></script>
 </body>
 
