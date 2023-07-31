@@ -32,7 +32,7 @@
                             <a class="nav-link" href="#servicios">Servicios</a>
                         </li>
                         <li class="nav-item mx-5">
-                            <a class="nav-link" href="#clientes">Clientess</a>
+                            <a class="nav-link" href="#clientes">Clientes</a>
                         </li>
                         <li class="nav-item mx-5">
                             <a class="nav-link" id="hover" href="#sobremi">Sobre Mi</a>
@@ -45,7 +45,7 @@
         </nav>
         <div class="principio">
             <div>
-                <h1 data-aos="fade-up" data-aos-duration="3000">Administracion<br> T.C. </h1>
+                <h1 data-aos="fade-up text-break" data-aos-duration="3000">Administracion  <span class="titulo "></span> </h1>
                 <div class="d-flex">
                     <p class="descripcion-inicio text-wrap" data-aos="fade-up" data-aos-duration="2000">En Adminsitracion tc nos  dedicamos a resolver todos los problemas que tenga tu empresa de índole administrativa, financiera,  contable, impositiva y de personal . <br> <br> Donde analizamos la situación, elaboramos un plan de acción y  lo llevamos a cabo para una correcta administración del negocio.</p>
             
@@ -66,19 +66,19 @@
             <div class="servicios-tareas row ">
                 <div class="col-3 col-md-4 p-0">
                     <h3 data-aos="zoom-in" data-aos-duration="500" class="text-center fw-bolder ">Gestión <br> financiera</h3>
-                    <ul class="d-none lista">
+                    <ul class="d-none lista overflow-hidden">
                         <li class="escribir"></li>                        
                     </ul>                    
                 </div>
                 <div class="col-3 col-md-4 p-0">
                     <h3 data-aos="zoom-in" data-aos-duration="900" class="text-center fw-bolder">Gestión <br>contable</h3>
-                    <ul class="d-none lista">
+                    <ul class="d-none lista overflow-hidden">
                         <li class="escribir1"> </li>
                     </ul>
                 </div>
                 <div class="col-4   p-0">
                     <h3 data-aos="zoom-in" data-aos-duration="1300" class="text-center fw-bolder">Gestión <br> administrativa </h3>
-                    <ul class="d-none lista">
+                    <ul class="d-none lista overflow-hidden">
                         <li class="escribir2"> </li>
                     </ul>
                 </div>
@@ -188,10 +188,7 @@
             </div>
         </section>
         
-        <a href="#contactame">
-            <button type="button" class="btn boton mt-1" data-aos="flip-right">
-                CONTACTAME</button>
-        </a>
+        
         <section class="contactame" id="contactame">
             <h2 class="servicios-num">03.</h2>
             <h2 class="servicios-titulo">CONTACTAME</h2>
@@ -254,7 +251,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
     <script>
         new Glide('.glide', {
-            perView: 4,
+            perView: 6,
             gap: 10,
             autoplay: 2500,
             bound: true,
@@ -263,11 +260,11 @@
             rewindDuration: 2000,
             breakpoints: {
                 800: {
-                    perView: 3,
+                    perView: 5,
                 },
-                700: {
+                500: {
                     perView: 3,
-                    gap: 10,
+                    gap:10,
                 }
             }
         }).mount()
