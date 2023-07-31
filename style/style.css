@@ -23,6 +23,8 @@ body {
   background-color:#2b2e3b;
   color:#dadff7 ;
 }
+
+
 /*FONDO PAGINA INICIAL*/
 
 ul {
@@ -589,6 +591,9 @@ button.glide__arrow.glide__arrow--right {
 }
 
 @media screen and (max-width: 500px) {
+  svg#claro{
+    width: 20px;
+  }
   body{
     padding-inline: 1rem;
     width: 100vw;
