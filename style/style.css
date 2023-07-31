@@ -256,7 +256,7 @@ img.logo-clientes.aos-init {
 }
 
 form {
-  width: 50vw;
+  width: 75vw;
   display: flex;
   flex-direction: column;
 }
@@ -584,7 +584,7 @@ button.glide__arrow.glide__arrow--right {
     flex-direction: column;
   }
   .descripcion-inicio {   
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 
 
@@ -649,7 +649,7 @@ img.logo-clientes.aos-init {
   
 h3.text-center.aos-init.aos-animate {
   
-  font-size: 1.1rem;
+  font-size: 1rem;
   
 }
 
