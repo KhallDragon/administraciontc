@@ -59,8 +59,27 @@ tema.addEventListener("click", ()=>{
   body.classList.toggle("dark")
   tema.classList.toggle("link-dark")
   tema.classList.toggle("link-warning")
-  
   logoDark.classList.toggle("d-none")
-   logo.classList.toggle("d-none")
+  logo.classList.toggle("d-none")
+
+  body.classList.contains("dark") ? localStorage.setItem("dark-mode", "true") : localStorage.setItem("dark-mode", "false")
   
 })
+
+if(localStorage.getItem("dark-mode") == "true"){
+  body.classList.add("dark")
+  claro.classList.add("d-none")  
+  oscuro.classList.remove("d-none")
+  tema.classList.remove("link-dark")
+  tema.classList.add("link-warning")
+  logoDark.classList.remove("d-none")
+  logo.classList.add("d-none")
+} else {
+  body.classList.remove("dark")
+  claro.classList.remove("d-none")  
+  oscuro.classList.add("d-none")
+  tema.classList.add("link-dark")
+  tema.classList.remove("link-warning")
+  logoDark.classList.add("d-none")
+  logo.classList.remvoe("d-none")
+}
