@@ -56,3 +56,22 @@ const pepe = new Typed('.titulo', {
   backDelay: 1000,
   loop: true
 })
+
+const tema = document.querySelector("#tema")
+const claro = document.querySelector("#claro")
+const oscuro = document.querySelector("#oscuro")
+const body = document.querySelector("body")
+const logo = document.querySelector("#logo")
+const logoDark = document.querySelector("#logo-dark")
+
+tema.addEventListener("click", ()=>{
+  oscuro.classList.toggle("d-none")
+  claro.classList.toggle("d-none")
+  body.classList.toggle("dark")
+  tema.classList.toggle("link-dark")
+  tema.classList.toggle("link-warning")
+  
+  logoDark.classList.toggle("d-none")
+   logo.classList.toggle("d-none")
+  
+})

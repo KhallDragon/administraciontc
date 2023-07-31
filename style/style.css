@@ -9,16 +9,20 @@
   text-decoration: none; }
   
 
-
-
 body {
   background-color: #dadff7;
   color: #2b2e3b;
   padding-inline: 10rem;
   font-family: 'Rajdhani', sans-serif;
   overflow-x: hidden;
+  transition: all 0.5s;
 }
 
+
+.dark{
+  background-color:#2b2e3b;
+  color:#dadff7 ;
+}
 /*FONDO PAGINA INICIAL*/
 
 ul {
@@ -45,9 +49,13 @@ nav.navbar.navbar-expand-lg.bg-body-tertiary {
   color: #2b2e3b !important;
 }
 
+
 a.nav-link {
   color: #2b2e3b;
   transition: transform 0.5s;
+}
+body.dark a.nav-link{
+  color: #dadff7!important;
 }
 span.navbar-toggler-icon {
   background-color: #2b2e3b!important;
@@ -170,6 +178,10 @@ video {
 
 .servicios-tareas div {
   border: 2px black solid;
+}
+
+body.dark .servicios-tareas div {
+  border: 2px white solid;
 }
 
 .servicios-tareas div h3 {
@@ -537,6 +549,9 @@ button.glide__arrow.glide__arrow--right {
 
 
 @media screen and (max-width: 1024px) {
+  body{
+    padding-inline: 6rem;
+  }
   h1 {
     margin-top: 2rem;
     font-size: 6rem;
