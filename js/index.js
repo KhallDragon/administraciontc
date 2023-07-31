@@ -54,6 +54,7 @@ const logo = document.querySelector("#logo")
 const logoDark = document.querySelector("#logo-dark")
 const cambiologo = document.querySelectorAll(".logos-dark")
 const cambiologo1 = document.querySelectorAll(".logos-dark1")
+const sobreMi = document.querySelector("#sobremi")
 
 
 tema.addEventListener("click", ()=>{
@@ -64,6 +65,7 @@ tema.addEventListener("click", ()=>{
   tema.classList.toggle("link-warning")
   logoDark.classList.toggle("d-none")
   logo.classList.toggle("d-none")
+  
 
   cambiologo.forEach((logo)=>{
     logo.classList.toggle("d-none")
@@ -83,6 +85,7 @@ if(localStorage.getItem("dark-mode") == "true"){
   tema.classList.add("link-warning")
   logoDark.classList.remove("d-none")
   logo.classList.add("d-none")
+ 
   cambiologo.forEach((logo)=>{
     logo.classList.remove("d-none")
   })
@@ -97,6 +100,7 @@ if(localStorage.getItem("dark-mode") == "true"){
   tema.classList.remove("link-warning")
   logoDark.classList.add("d-none")
   logo.classList.remvoe("d-none")
+  
   cambiologo.forEach((logo)=>{
     logo.classList.add("d-none")
   })
