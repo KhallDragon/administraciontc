@@ -46,17 +46,6 @@ btn.addEventListener('click', ()=>{
 
 
 
-
-
-const pepe = new Typed('.titulo', {
-  strings : [ `T.C.`],
-  typeSpeed: 200,
-  backSpeed: 300,
-  startDelay: 500,
-  backDelay: 1000,
-  loop: true
-})
-
 const tema = document.querySelector("#tema")
 const claro = document.querySelector("#claro")
 const oscuro = document.querySelector("#oscuro")
