@@ -7,7 +7,7 @@ btn.addEventListener('click', ()=>{
   lista.forEach((el)=>{
     el.classList.toggle('d-none')
   })
-    if(lista[1].className == 'lista d-none'){
+    if(lista[1].className == 'lista overflow-hidden d-none'){
       btn.innerHTML = 'Ver Detalle'
     
     } else {
