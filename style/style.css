@@ -181,6 +181,9 @@ video {
   justify-content: center;
 }
 
+body.dark .boton{
+  background-color: aquamarine;
+}
 .servicios-tareas div {
   border: 2px black solid;
   box-shadow: 3px 2px 4px rgba(0, 0, 0, 0.7);
