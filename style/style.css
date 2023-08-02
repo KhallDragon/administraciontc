@@ -121,6 +121,11 @@ video {
   transform: scale(1.2);
 }
 
+body.dark .scroll-img img {
+  filter: invert(1);
+  /* filter: invert(0.4) hue-rotate(20deg) saturate(813%); */
+}
+
 
 /*Sobre Mi*/
 
@@ -597,8 +602,10 @@ button.glide__arrow.glide__arrow--right {
   .descripcion-inicio {   
     font-size: 1rem;
   }
+  .glide__arrows {
 
-
+    margin-block: 1rem;
+}
 .video {
   height: 90%;
 }
