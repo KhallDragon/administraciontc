@@ -123,15 +123,11 @@ video {
 
 body.dark .scroll-img img {
   filter: invert(1);
-  /* filter: invert(0.4) hue-rotate(20deg) saturate(813%); */
+   filter: invert(0.4) hue-rotate(20deg) saturate(813%); 
 }
 
 
 /*Sobre Mi*/
-
-
-
-
 
 .boton{
   background-color: #5a7d7c;
@@ -197,6 +193,9 @@ body.dark .servicios-num{
 
 body.dark .boton{
   background-color: aquamarine;
+}
+body.dark .boton:hover{
+  background-color: #5a7d7c;
 }
 .servicios-tareas div {
   border: 2px black solid;
