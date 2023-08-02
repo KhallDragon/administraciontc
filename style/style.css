@@ -107,11 +107,18 @@ video {
 .scroll-img {
   display: flex;
   justify-content: center;
+  filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7));
+  
 }
 
 .scroll-img img {
   height: 3rem;
   margin-bottom: 4rem;
+  transition: all 0.5s;
+}
+
+.scroll-img img:hover{
+  transform: scale(1.2);
 }
 
 
