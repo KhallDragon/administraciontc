@@ -157,8 +157,7 @@ video {
 /*SERVICIOS*/
 
 .servicios {
-  margin-top: 3rem;
-  
+  margin-top: 3rem;  
 }
 
 .servicios-num {
@@ -166,6 +165,9 @@ video {
   color: #5a7d7c;
   font-family: 'Encode Sans Semi Expanded', sans-serif;
   font-size: 1.5rem;
+}
+body.dark .servicios-num{
+  color: aquamarine;
 }
 
 .servicios-titulo {
