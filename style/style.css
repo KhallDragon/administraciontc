@@ -58,8 +58,13 @@ a.nav-link {
   
 }
 body.dark a.nav-link{
-  color: #dadff7!important;
+  color: #dadff7;
   text-shadow: 10px 10px 10px black;
+  transform: all 0.5s;
+}
+
+body.dark a.nav-link:hover{
+  color: aquamarine!important;
 }
 span.navbar-toggler-icon {
   background-color: #2b2e3b!important;
@@ -142,6 +147,7 @@ body.dark .scroll-img img {
   color: white;
   filter: drop-shadow(1px 10px 4px rgba(0, 0, 0, 0.7));
 }
+
 
 .sobreMi {
   display: flex;
